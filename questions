@@ -1,4 +1,16 @@
 What is the difference between switch and checkout?
+this command is used to switch to a specified branch. For example: git switch branch_name
 What does git merge do?
+слияние веткиWhen you merge branches, Git combines the changes and creates a new commit that represents the merged state.
 What happens to the commit history after rebase and why?
+When you perform a git rebase, you are essentially rewriting the commit history. Commits are applied one by one from the branch being rebased onto the target branch. This results in a linear history, making it appear as if the changes on the rebased branch happened sequentially on top of the target branch.
+The original commits on the rebased branch are replaced with new commits, so the commit hashes change. This rewriting of history can make the commit history cleaner but should be used with caution, especially on shared branches.
 How to understand which branch is remote and which is local in the terminal?
+git branch
+git branch -r
+git branch -a
+main
+feature-branch
+origin/main
+origin/feature-branch
+git fetch
